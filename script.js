@@ -71,7 +71,7 @@ let balu = {
     let amount = Math.floor(parseFloat(document.getElementById('amount').value));
   
     if (type === '' || isNaN(amount) || amount <= 0) {
-        entt.innerHTML=`Enter valid Data`
+        alert('Enter valid Data')
     } else {
       balu.balance += amount;
       updateLocalStorageAndUI();
